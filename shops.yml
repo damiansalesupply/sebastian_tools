@@ -1082,19 +1082,19 @@
 
 1521:
   name: "Miss Etam NL"
-  recipients: ["s.bysiak@salesupply.com", "sebastian.bysiak@gmail.com"]
+  recipients: ["s.bysiak@salesupply.com", "d.kuczynski@salesupply.com@gmail.com"]
 
 1524:
   name: "DeniCler PL"
-  recipients: ["s.bysiak@salesupply.com",]
+  recipients: []
 
 1525:
   name: "Bravado DE"
-  recipients: ["EMPTY", ]
+  recipients: []
 
 1526:
   name: "Universal Group DE"
-  recipients: [s.bysiak@salesupply.com]
+  recipients: []
 
 1532:
   name: "Ouroovenlysgardiner.dk"
