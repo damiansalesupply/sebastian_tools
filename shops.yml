@@ -114,7 +114,7 @@
 
 473:
   name: "Yumeko DE"
-  recipients: ["s.bysiak@salesupply.com", "d.kuczynski@salesupply.com@gmail.com"]
+  recipients: ["s.bysiak@salesupply.com", "d.kuczynski@salesupply.com"]
 
 485:
   name: "Marketsupply.amazon.de"
@@ -1082,7 +1082,7 @@
 
 1521:
   name: "Miss Etam NL"
-  recipients: ["s.bysiak@salesupply.com", "d.kuczynski@salesupply.com@gmail.com"]
+  recipients: ["s.bysiak@salesupply.com", "d.kuczynski@salesupply.com"]
 
 1524:
   name: "DeniCler PL"
