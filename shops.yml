@@ -1,0 +1,1725 @@
+# shop_id -> display name and email recipients (from shops.json; fill recipients as needed)
+
+19:
+  name: "Salesupply Netherlands Operations"
+  recipients: []
+
+20:
+  name: "Salesupply Germany Operations"
+  recipients: []
+
+38:
+  name: "Batteries-online.fr"
+  recipients: []
+
+46:
+  name: "Luminairestotal.fr"
+  recipients: []
+
+96:
+  name: "Leinwandeshop24.de"
+  recipients: []
+
+98:
+  name: "Salesupply Danmark"
+  recipients: []
+
+99:
+  name: "Salesupply Spain Operations"
+  recipients: []
+
+100:
+  name: "Salesupply France Operations"
+  recipients: []
+
+101:
+  name: "Salesupply AG"
+  recipients: []
+
+102:
+  name: "Salesupply Italia Operations"
+  recipients: []
+
+106:
+  name: "SME Salesupply United Kingdom Inbound"
+  recipients: []
+
+116:
+  name: "MakesYouLocal P/S"
+  recipients: []
+
+118:
+  name: "Salesupply Polski"
+  recipients: []
+
+141:
+  name: "Ordersync Test Shop"
+  recipients: []
+
+169:
+  name: "Salesupply USA Operations"
+  recipients: []
+
+199:
+  name: "Salesupply Brazil"
+  recipients: []
+
+270:
+  name: "Salesupply China"
+  recipients: []
+
+279:
+  name: "Dachfenster-rollo.de"
+  recipients: []
+
+280:
+  name: "Store-fenetre-de-toit.fr"
+  recipients: []
+
+281:
+  name: "dakraamgordijnen.nl"
+  recipients: []
+
+282:
+  name: "dakraamgordijnen.be"
+  recipients: []
+
+312:
+  name: "Salesupply BV"
+  recipients: []
+
+380:
+  name: "ShopCtrl.com"
+  recipients: []
+
+401:
+  name: "Ouropimennysverhot.fi"
+  recipients: []
+
+403:
+  name: "Ourorullgardiner.se"
+  recipients: []
+
+444:
+  name: "Salesupply BV Technical Services"
+  recipients: []
+
+445:
+  name: "Ouroestores.es"
+  recipients: []
+
+461:
+  name: "Return Service DE"
+  recipients: []
+
+473:
+  name: "Yumeko DE"
+  recipients: []
+
+485:
+  name: "Marketsupply.amazon.de"
+  recipients: []
+
+510:
+  name: "Ouroestores.pt"
+  recipients: []
+
+517:
+  name: "Return Service NL"
+  recipients: []
+
+518:
+  name: "Return Service FR"
+  recipients: []
+
+519:
+  name: "Return Service UK"
+  recipients: []
+
+520:
+  name: "Return Service ES"
+  recipients: []
+
+521:
+  name: "Return Service IT"
+  recipients: []
+
+539:
+  name: "Tendeperlucernari IT"
+  recipients: []
+
+547:
+  name: "Aerosus NL"
+  recipients: []
+
+555:
+  name: "Salesupply BV Financial Services"
+  recipients: []
+
+602:
+  name: "Salesupply France Sales"
+  recipients: []
+
+604:
+  name: "Test-shop.de"
+  recipients: []
+
+607:
+  name: "WorkOnAPIshop"
+  recipients: []
+
+609:
+  name: "Fitancy.nl"
+  recipients: []
+
+614:
+  name: "Gordijnen NL"
+  recipients: []
+
+616:
+  name: "Test-shop.us"
+  recipients: []
+
+649:
+  name: "Logistics US"
+  recipients: []
+
+655:
+  name: "Salesupply Italia Sales"
+  recipients: []
+
+658:
+  name: "Salesupply Germany Sales"
+  recipients: []
+
+659:
+  name: "Salesupply Netherlands Sales"
+  recipients: []
+
+660:
+  name: "SME Salesupply United Kingdom Outbound"
+  recipients: []
+
+661:
+  name: "Salesupply USA Sales"
+  recipients: []
+
+662:
+  name: "Salesupply Spain Sales"
+  recipients: []
+
+664:
+  name: "Salesupply Logistik DU"
+  recipients: []
+
+667:
+  name: "Secrid Wallets TEST"
+  recipients: []
+
+684:
+  name: "Secrid Wallets USA"
+  recipients: []
+
+696:
+  name: "Girav DE (FWD CALLS)"
+  recipients: []
+
+707:
+  name: "Miliboo.be"
+  recipients: []
+
+708:
+  name: "Miliboo.nl"
+  recipients: []
+
+709:
+  name: "Miliboo.de"
+  recipients: []
+
+716:
+  name: "Salesupply BV CBM"
+  recipients: []
+
+717:
+  name: "Salesupply BV Logistical Services"
+  recipients: []
+
+722:
+  name: "Drucksupplier.de"
+  recipients: []
+
+723:
+  name: "Printingdeal.uk"
+  recipients: []
+
+736:
+  name: "Salesupply Germany Support"
+  recipients: []
+
+769:
+  name: "Shinerich Bol.com"
+  recipients: []
+
+776:
+  name: "Salesupply Netherlands Logistics"
+  recipients: []
+
+777:
+  name: "Salesupply Italia Logistics"
+  recipients: []
+
+778:
+  name: "7 For All Mankind UK"
+  recipients: []
+
+779:
+  name: "7 For All Mankind DE"
+  recipients: []
+
+780:
+  name: "7 For All Mankind FR"
+  recipients: []
+
+781:
+  name: "7 For All Mankind IT"
+  recipients: []
+
+782:
+  name: "7 For All Mankind ES"
+  recipients: []
+
+783:
+  name: "7 For All Mankind NL"
+  recipients: []
+
+786:
+  name: "Segway NL"
+  recipients: []
+
+787:
+  name: "Segway FR"
+  recipients: []
+
+788:
+  name: "Segway ES"
+  recipients: []
+
+789:
+  name: "Segway IT"
+  recipients: []
+
+790:
+  name: "Segway UK"
+  recipients: []
+
+791:
+  name: "Segway IE"
+  recipients: []
+
+792:
+  name: "Segway DE"
+  recipients: []
+
+797:
+  name: "Segway AT"
+  recipients: []
+
+798:
+  name: "Segway PT"
+  recipients: []
+
+800:
+  name: "Segway BE-NL"
+  recipients: []
+
+804:
+  name: "Segway BE-FR"
+  recipients: []
+
+808:
+  name: "Kunststoffplattenonline.de"
+  recipients: []
+
+809:
+  name: "Plasticsheetsshop.co.uk"
+  recipients: []
+
+820:
+  name: "Kunststofplatenshop.nl"
+  recipients: []
+
+821:
+  name: "Kunststofplaten.be"
+  recipients: []
+
+834:
+  name: "Miliboo.es"
+  recipients: []
+
+837:
+  name: "Depot.io BV"
+  recipients: []
+
+839:
+  name: "QUP ING Punten "
+  recipients: []
+
+842:
+  name: "Dagje Uit Cadeau kaart "
+  recipients: []
+
+863:
+  name: "Segway-Shopmanagement Archive"
+  recipients: []
+
+875:
+  name: "Hirmer.de"
+  recipients: []
+
+877:
+  name: "Hirmer.uk"
+  recipients: []
+
+879:
+  name: "Salesupply BV Technical Services Test "
+  recipients: []
+
+886:
+  name: "Acrylglasplattenshop.de"
+  recipients: []
+
+887:
+  name: "Hplplattenshop.de"
+  recipients: []
+
+903:
+  name: "Kunststoffplatten.at"
+  recipients: []
+
+906:
+  name: "7Forallmankind TEST"
+  recipients: []
+
+916:
+  name: "Carhartt NL"
+  recipients: []
+
+917:
+  name: "Carhartt UK"
+  recipients: []
+
+918:
+  name: "Carhartt DE"
+  recipients: []
+
+919:
+  name: "Carhartt FR"
+  recipients: []
+
+924:
+  name: "Leuchtentotal.de"
+  recipients: []
+
+927:
+  name: "Sinner US"
+  recipients: []
+
+939:
+  name: "Kroftman.fr"
+  recipients: []
+
+947:
+  name: "Plexiglasssurmesure.fr"
+  recipients: []
+
+955:
+  name: "Kunststofplatenshop Test"
+  recipients: []
+
+967:
+  name: "THE HEART COMPANY DE"
+  recipients: []
+
+969:
+  name: "Salesupply Holding BV"
+  recipients: []
+
+978:
+  name: "Hirmer-grosse-groessen.de"
+  recipients: []
+
+985:
+  name: "Plaqueplastique.fr"
+  recipients: []
+
+993:
+  name: "Carhartt ES"
+  recipients: []
+
+994:
+  name: "Carhartt IT"
+  recipients: []
+
+1006:
+  name: "Plaqueplastique.be"
+  recipients: []
+
+1016:
+  name: "Salesupply Spain Logistics"
+  recipients: []
+
+1017:
+  name: "BISSELL DE"
+  recipients: []
+
+1023:
+  name: "Beheizte-kleidung.de"
+  recipients: []
+
+1026:
+  name: "Maxifleur Kunstpflanzen"
+  recipients: []
+
+1028:
+  name: "Maxifleur Plantes Artificielles"
+  recipients: []
+
+1037:
+  name: "Bear Family Records DE"
+  recipients: []
+
+1049:
+  name: "Dartshopper PL"
+  recipients: []
+
+1050:
+  name: "Dartshopper FR"
+  recipients: []
+
+1069:
+  name: "Volksbank"
+  recipients: []
+
+1072:
+  name: "Salesupply USA Projects"
+  recipients: []
+
+1078:
+  name: "BISSELL NL"
+  recipients: []
+
+1079:
+  name: "Secrid DE"
+  recipients: []
+
+1088:
+  name: "Marketsupply NL"
+  recipients: []
+
+1090:
+  name: "Salesupply UK Ltd Sales"
+  recipients: []
+
+1091:
+  name: "Salesupply Poland Operations"
+  recipients: []
+
+1092:
+  name: "Salesupply Poland Sales"
+  recipients: []
+
+1095:
+  name: "Salesupply UK Ltd Operations"
+  recipients: []
+
+1138:
+  name: "BISSELL IT"
+  recipients: []
+
+1139:
+  name: "Gamvis eSports Technology"
+  recipients: []
+
+1149:
+  name: "Tamaris IT"
+  recipients: []
+
+1172:
+  name: "Sillaoficina365 ES"
+  recipients: []
+
+1179:
+  name: "Panasonic UK"
+  recipients: []
+
+1180:
+  name: "Panasonic ES"
+  recipients: []
+
+1181:
+  name: "Panasonic FR"
+  recipients: []
+
+1182:
+  name: "Panasonic IT"
+  recipients: []
+
+1183:
+  name: "Panasonic PL"
+  recipients: []
+
+1184:
+  name: "Simply4you NL"
+  recipients: []
+
+1185:
+  name: "Panasonic IE"
+  recipients: []
+
+1186:
+  name: "Panasonic PT"
+  recipients: []
+
+1188:
+  name: "Urbogym PL"
+  recipients: []
+
+1189:
+  name: "Kunststofplaten Shop Professional"
+  recipients: []
+
+1195:
+  name: "Microoled USA"
+  recipients: []
+
+1197:
+  name: "Lobbes DE"
+  recipients: []
+
+1198:
+  name: "Salesupply BV Technical Integrations"
+  recipients: []
+
+1199:
+  name: "Secrid IT"
+  recipients: []
+
+1202:
+  name: "Bloc Shop Professional "
+  recipients: []
+
+1203:
+  name: "ParcelLab UK"
+  recipients: []
+
+1204:
+  name: "ParcelLab DE"
+  recipients: []
+
+1205:
+  name: "ParcelLab US"
+  recipients: []
+
+1206:
+  name: "ParcelLab FR"
+  recipients: []
+
+1212:
+  name: "Luminadeco PL"
+  recipients: []
+
+1213:
+  name: "Damidomo PL"
+  recipients: []
+
+1214:
+  name: "Akdb DE"
+  recipients: []
+
+1217:
+  name: "Tennis-Point DE"
+  recipients: []
+
+1222:
+  name: "Panasonic HU"
+  recipients: []
+
+1223:
+  name: "HBM DE"
+  recipients: []
+
+1225:
+  name: "Salesupply Demo shop"
+  recipients: []
+
+1226:
+  name: "Panasonic NL"
+  recipients: []
+
+1232:
+  name: "Panasonic CH"
+  recipients: []
+
+1233:
+  name: "Ergotopia DE"
+  recipients: []
+
+1237:
+  name: "Lampesonline FR"
+  recipients: []
+
+1241:
+  name: "DryLy FR"
+  recipients: []
+
+1249:
+  name: "Gartenmoebel Company DE"
+  recipients: []
+
+1251:
+  name: "Tennis-Point AT"
+  recipients: []
+
+1252:
+  name: "Tennis-Peters DE"
+  recipients: []
+
+1253:
+  name: "CenterCourt DE"
+  recipients: []
+
+1254:
+  name: "Running-Point DE"
+  recipients: []
+
+1255:
+  name: "HBM NL"
+  recipients: []
+
+1256:
+  name: "FRoSTA IT"
+  recipients: []
+
+1257:
+  name: "Panasonic BE-NL"
+  recipients: []
+
+1258:
+  name: "Panasonic BE-FR"
+  recipients: []
+
+1262:
+  name: "Salesupply BV Sales Global"
+  recipients: []
+
+1268:
+  name: "Salesupply BV Projects CS"
+  recipients: []
+
+1269:
+  name: "Salesupply BV Projects FF"
+  recipients: []
+
+1271:
+  name: "Planchasdeplastico.es"
+  recipients: []
+
+1272:
+  name: "Pannelliplastica.it"
+  recipients: []
+
+1273:
+  name: "N-Brands NL"
+  recipients: []
+
+1279:
+  name: "Tennis-Point DK"
+  recipients: []
+
+1280:
+  name: "Tennis-Point SE"
+  recipients: []
+
+1281:
+  name: "Tennis-Point NL"
+  recipients: []
+
+1289:
+  name: "Onitsuka Tiger NL"
+  recipients: []
+
+1290:
+  name: "Onitsuka Tiger IT"
+  recipients: []
+
+1291:
+  name: "Onitsuka Tiger FR"
+  recipients: []
+
+1292:
+  name: "Onitsuka Tiger UK"
+  recipients: []
+
+1293:
+  name: "Onitsuka Tiger DE"
+  recipients: []
+
+1294:
+  name: "Onitsuka Tiger ES"
+  recipients: []
+
+1299:
+  name: "Aerosus SE"
+  recipients: []
+
+1300:
+  name: "Aerosus FI"
+  recipients: []
+
+1305:
+  name: "Pitbull PL"
+  recipients: []
+
+1308:
+  name: "Skullhead PL"
+  recipients: []
+
+1309:
+  name: "Tamaris GR"
+  recipients: []
+
+1310:
+  name: "Tamaris PL"
+  recipients: []
+
+1311:
+  name: "Tamaris CZ"
+  recipients: []
+
+1326:
+  name: "Carhartt Shopprof"
+  recipients: []
+
+1328:
+  name: "Pitbulloutlet PL"
+  recipients: []
+
+1329:
+  name: "Cartag FR"
+  recipients: []
+
+1331:
+  name: "Onitsuka Tiger PL"
+  recipients: []
+
+1332:
+  name: "Onitsuka Tiger PT"
+  recipients: []
+
+1334:
+  name: "Onitsuka Tiger SK"
+  recipients: []
+
+1335:
+  name: "Onitsuka Tiger DK"
+  recipients: []
+
+1348:
+  name: "Tennis-Point CH"
+  recipients: []
+
+1369:
+  name: "Medilage PL"
+  recipients: []
+
+1371:
+  name: "Finally.me PL"
+  recipients: []
+
+1373:
+  name: "Lenovo Bol.com"
+  recipients: []
+
+1374:
+  name: "K-Parts DE"
+  recipients: []
+
+1375:
+  name: "K-Parts NL"
+  recipients: []
+
+1376:
+  name: "Panasonic UK B2B"
+  recipients: []
+
+1377:
+  name: "Panasonic IE B2B "
+  recipients: []
+
+1378:
+  name: "Running-Point CH"
+  recipients: []
+
+1380:
+  name: "Xbox DE"
+  recipients: []
+
+1383:
+  name: "Artiflame PL"
+  recipients: []
+
+1384:
+  name: "Sanature B.V."
+  recipients: []
+
+1385:
+  name: "Sanicorp GmbH"
+  recipients: []
+
+1386:
+  name: "Pitbull Promotion PL"
+  recipients: []
+
+1388:
+  name: "TestShop NL"
+  recipients: []
+
+1392:
+  name: "Onitsuka Tiger SE"
+  recipients: []
+
+1393:
+  name: "Onitsuka Tiger FI"
+  recipients: []
+
+1394:
+  name: "Onitsuka Tiger AT"
+  recipients: []
+
+1395:
+  name: "Onitsuka Tiger BE-NL"
+  recipients: []
+
+1396:
+  name: "Onitsuka Tiger BE-FR"
+  recipients: []
+
+1400:
+  name: "Koelle-Zoo DE"
+  recipients: []
+
+1405:
+  name: "Just Brands DE"
+  recipients: []
+
+1410:
+  name: "Customer Portal NL"
+  recipients: []
+
+1411:
+  name: "Be Runner RO"
+  recipients: []
+
+1412:
+  name: "SK Store RO"
+  recipients: []
+
+1413:
+  name: "Warsaw Sneaker Store RO"
+  recipients: []
+
+1414:
+  name: "Sanature Bol NL"
+  recipients: []
+
+1417:
+  name: "Boxspring Welt GmbH DE"
+  recipients: []
+
+1429:
+  name: "Queueup Plus"
+  recipients: []
+
+1430:
+  name: "Sanature Bol BE"
+  recipients: []
+
+1434:
+  name: "Skylight Blinds UK"
+  recipients: []
+
+1435:
+  name: "Skylight Blinds IE"
+  recipients: []
+
+1437:
+  name: "Vogi DE"
+  recipients: []
+
+1438:
+  name: "BISSELL TEST"
+  recipients: []
+
+1439:
+  name: "ByAcre IT (FWD CALLS)"
+  recipients: []
+
+1444:
+  name: "Lobbes FR"
+  recipients: []
+
+1456:
+  name: "Plytyplastikowe.pl"
+  recipients: []
+
+1457:
+  name: "Tennis-Point UK"
+  recipients: []
+
+1458:
+  name: "Running-Point UK"
+  recipients: []
+
+1459:
+  name: "Pferdesporthaus Loesdau NL"
+  recipients: []
+
+1460:
+  name: "Carpeto PL"
+  recipients: []
+
+1465:
+  name: "Secrid ES"
+  recipients: []
+
+1466:
+  name: "Secrid UK"
+  recipients: []
+
+1467:
+  name: "Secrid PT"
+  recipients: []
+
+1471:
+  name: "Mikrobiomiki PL"
+  recipients: []
+
+1473:
+  name: "Pferdesporthaus Loesdau Sandbox"
+  recipients: []
+
+1478:
+  name: "Kustom Kult Bol.com"
+  recipients: []
+
+1487:
+  name: "Yumeko FR"
+  recipients: []
+
+1488:
+  name: "BISSELL Bol.com"
+  recipients: []
+
+1489:
+  name: "Salesupply Sales Demo NL"
+  recipients: []
+
+1490:
+  name: "Salesupply Operations Demo NL"
+  recipients: []
+
+1491:
+  name: "Yumeko DK-SE"
+  recipients: []
+
+1493:
+  name: "GreenEssence PL"
+  recipients: []
+
+1494:
+  name: "Desportivo Bol.com"
+  recipients: []
+
+1499:
+  name: "Profitcrew DE"
+  recipients: []
+
+1502:
+  name: "Stores Kölle Zoo DE"
+  recipients: []
+
+1512:
+  name: "Ilovejouets FR "
+  recipients: []
+
+1513:
+  name: "Salesupply Operations Demo DE"
+  recipients: []
+
+1514:
+  name: "Salesupply Operations Demo US"
+  recipients: []
+
+1515:
+  name: "Salesupply Operations Demo UK"
+  recipients: []
+
+1516:
+  name: "Salesupply Operations Demo FR"
+  recipients: []
+
+1517:
+  name: "Salesupply Operations Demo ES"
+  recipients: []
+
+1518:
+  name: "Salesupply Operations Demo IT"
+  recipients: []
+
+1519:
+  name: "Window Fashion FR"
+  recipients: []
+
+1521:
+  name: "Miss Etam NL"
+  recipients: ["s.bysiak@salesupply.com", "sebastian.bysiak@gmail.com"]
+
+1524:
+  name: "DeniCler PL"
+  recipients: ["s.bysiak@salesupply.com",]
+
+1525:
+  name: "Bravado DE"
+  recipients: ["EMPTY", ]
+
+1526:
+  name: "Universal Group DE"
+  recipients: [s.bysiak@salesupply.com]
+
+1532:
+  name: "Ouroovenlysgardiner.dk"
+  recipients: []
+
+1533:
+  name: "SaleSupply Netherlands Sales (Global)"
+  recipients: []
+
+1534:
+  name: "SaleSupply Germany Sales (Global)"
+  recipients: []
+
+1535:
+  name: "SaleSupply USA Operations (Global)"
+  recipients: []
+
+1536:
+  name: "SaleSupply USA Sales (Global)"
+  recipients: []
+
+1537:
+  name: "SaleSupply Netherlands Operations (Global)"
+  recipients: []
+
+1538:
+  name: "SaleSupply Germany Operations (Global)"
+  recipients: []
+
+1539:
+  name: "AGU DE"
+  recipients: []
+
+1540:
+  name: "AGU DK"
+  recipients: []
+
+1541:
+  name: "AGU NL"
+  recipients: []
+
+1542:
+  name: "AGU FR"
+  recipients: []
+
+1544:
+  name: "Tennis-Point IT"
+  recipients: []
+
+1545:
+  name: "Tennis-Point FR"
+  recipients: []
+
+1546:
+  name: "Tennis-Point ES"
+  recipients: []
+
+1547:
+  name: "Orientana PL"
+  recipients: []
+
+1548:
+  name: "SaleSupply France Operations (Global)"
+  recipients: []
+
+1549:
+  name: "SaleSupply UK Ltd Operations (Global)"
+  recipients: []
+
+1550:
+  name: "SaleSupply Poland Operations (Global)"
+  recipients: []
+
+1551:
+  name: "SaleSupply Italia Operations (Global)"
+  recipients: []
+
+1553:
+  name: "Running-Point NL"
+  recipients: []
+
+1555:
+  name: "Running-Point AT"
+  recipients: []
+
+1574:
+  name: "Loewe FR"
+  recipients: []
+
+1575:
+  name: "Loewe IT"
+  recipients: []
+
+1576:
+  name: "Loewe DE"
+  recipients: []
+
+1577:
+  name: "Loewe PL"
+  recipients: []
+
+1578:
+  name: "Loewe UK"
+  recipients: []
+
+1579:
+  name: "Loewe ES"
+  recipients: []
+
+1585:
+  name: "SaleSupply Spain Sales (Global)"
+  recipients: []
+
+1586:
+  name: "SaleSupply Spain Operations (Global)"
+  recipients: []
+
+1588:
+  name: "OK-Living NL"
+  recipients: []
+
+1589:
+  name: "Citypro PL"
+  recipients: []
+
+1590:
+  name: "Marco Tozzi IT"
+  recipients: []
+
+1591:
+  name: "Breil NL Bol.com"
+  recipients: []
+
+1592:
+  name: "Salesupply UK Ltd Sales (Global)"
+  recipients: []
+
+1593:
+  name: "SaleSupply France Sales (Global)"
+  recipients: []
+
+1598:
+  name: "Mazovia DE"
+  recipients: []
+
+1599:
+  name: "Tennis-Point PL"
+  recipients: []
+
+1600:
+  name: "Jolie Window Fashions DE"
+  recipients: []
+
+1601:
+  name: "Nostalux (FWD CALLS)"
+  recipients: []
+
+1602:
+  name: "Quirumed (FWD CALLS)"
+  recipients: []
+
+1603:
+  name: "MangohoutOnline (FWD CALLS)"
+  recipients: []
+
+1604:
+  name: "Betaalbarekralen (FWD CALLS)"
+  recipients: []
+
+1605:
+  name: "Airlusion FR (FWD CALLS)"
+  recipients: []
+
+1608:
+  name: "Lampentotaal (FWD CALLS)"
+  recipients: []
+
+1609:
+  name: "Marketsupply (FWD CALLS)"
+  recipients: []
+
+1611:
+  name: "BHV-Voordeelwinkel (FWD CALLS)"
+  recipients: []
+
+1612:
+  name: "JustCarpets (FWD CALLS)"
+  recipients: []
+
+1613:
+  name: "HBM DE (FWD CALLS)"
+  recipients: []
+
+1614:
+  name: "Rationalstock (FWD CALLS)"
+  recipients: []
+
+1615:
+  name: "Roostershop (FWD CALLS)"
+  recipients: []
+
+1616:
+  name: "Sloggies (FWD CALLS)"
+  recipients: []
+
+1617:
+  name: "Stultiensgroup (FWD CALLS)"
+  recipients: []
+
+1618:
+  name: "Diamondsbyme (FWD CALLS)"
+  recipients: []
+
+1619:
+  name: "Bloc (FWD CALLS)"
+  recipients: []
+
+1620:
+  name: "Connetix Tiles Bol.com NL"
+  recipients: []
+
+1621:
+  name: "Window Fashion NL"
+  recipients: []
+
+1622:
+  name: "Lindt & Sprüngli Benelux"
+  recipients: []
+
+1623:
+  name: "Return Service USA"
+  recipients: []
+
+1628:
+  name: "Grüne Essenz DE"
+  recipients: []
+
+1629:
+  name: "Loewe NL"
+  recipients: []
+
+1630:
+  name: "Remorqueshop FR"
+  recipients: []
+
+1632:
+  name: "The Circle DE"
+  recipients: []
+
+1634:
+  name: "Lampgiant SE"
+  recipients: []
+
+1635:
+  name: "Lampengigant DE"
+  recipients: []
+
+1637:
+  name: "Caprice IT"
+  recipients: []
+
+1640:
+  name: "Italuxlampen DE"
+  recipients: []
+
+1641:
+  name: "Artiflame DE"
+  recipients: []
+
+1642:
+  name: "Tamaris Bol NL"
+  recipients: []
+
+1643:
+  name: "Ilovespeelgoed NL"
+  recipients: []
+
+1645:
+  name: "MKC Moto NL"
+  recipients: []
+
+1647:
+  name: "Bycocoon NL (FWD CALLS)"
+  recipients: []
+
+1648:
+  name: "DIDI NL"
+  recipients: []
+
+1650:
+  name: "Happy Socks Bol NL"
+  recipients: []
+
+1651:
+  name: "NEC Nijmegen Voetbalschool"
+  recipients: []
+
+1652:
+  name: "NEC Nijmegen Info"
+  recipients: []
+
+1653:
+  name: "NEC Nijmegen Kidsclub"
+  recipients: []
+
+1654:
+  name: "NEC Nijmegen Fanshop"
+  recipients: []
+
+1655:
+  name: "NEC Nijmegen Ticketing"
+  recipients: []
+
+1658:
+  name: "Tamaris NL"
+  recipients: []
+
+1659:
+  name: "50five E-Mobility"
+  recipients: []
+
+1661:
+  name: "Mart Visser NL"
+  recipients: []
+
+1664:
+  name: "Salesupply BV Marketing Global"
+  recipients: []
+
+1665:
+  name: "Salesupply BV Projects RT"
+  recipients: []
+
+1666:
+  name: "Bonni24 DE"
+  recipients: []
+
+1667:
+  name: "Panasonic ES (FWD CALLS)"
+  recipients: []
+
+1669:
+  name: "Panasonic UK B2B (FWD CALLS)"
+  recipients: []
+
+1670:
+  name: "Q8 Tango BE-NL"
+  recipients: []
+
+1671:
+  name: "Q8 Tango BE-FR"
+  recipients: []
+
+1672:
+  name: "Numobi BE-NL"
+  recipients: []
+
+1673:
+  name: "Numobi BE-FR"
+  recipients: []
+
+1674:
+  name: "50five BE-NL"
+  recipients: []
+
+1675:
+  name: "50five BE-FR"
+  recipients: []
+
+1676:
+  name: "Bonni24 CZ"
+  recipients: []
+
+1677:
+  name: "Yezey PL"
+  recipients: []
+
+1678:
+  name: "50five Installer NL"
+  recipients: []
+
+1682:
+  name: "50five E-Mobility (FWD CALLS)"
+  recipients: []
+
+1683:
+  name: "ALDI-Enjoy BE-NL"
+  recipients: []
+
+1684:
+  name: "Q8 Tango NL"
+  recipients: []
+
+1685:
+  name: "ALDI-Enjoy LUX"
+  recipients: []
+
+1686:
+  name: "ALDI-Enjoy BE-FR"
+  recipients: []
+
+1689:
+  name: "Xandres DE"
+  recipients: []
+
+1690:
+  name: "HBM ES (FWD CALLS)"
+  recipients: []
+
+1691:
+  name: "HBM FR (FWD CALLS)"
+  recipients: []
+
+1692:
+  name: "HBM IT (FWD CALLS)"
+  recipients: []
+
+1693:
+  name: "HBM ES"
+  recipients: []
+
+1694:
+  name: "HBM FR"
+  recipients: []
+
+1695:
+  name: "HBM IT"
+  recipients: []
+
+1697:
+  name: "HBM NL (FWD CALLS)"
+  recipients: []
+
+1699:
+  name: "50five Charging Solutions DE"
+  recipients: []
+
+1700:
+  name: "50five Charging Solutions UK"
+  recipients: []
+
+1701:
+  name: "50five Charging Solutions FR"
+  recipients: []
+
+1707:
+  name: "Q8 Tango NL (FWD CALLS)"
+  recipients: []
+
+1708:
+  name: "The Hippie Shake UK"
+  recipients: []
+
+1709:
+  name: "WearPay PL"
+  recipients: []
+
+1710:
+  name: "Anhaengershop DE"
+  recipients: []
+
+1712:
+  name: "Zandri NL"
+  recipients: []
+
+1713:
+  name: "Zandri DE"
+  recipients: []
+
+1714:
+  name: "M2Trading NL"
+  recipients: []
+
+1715:
+  name: "M2Trading DE"
+  recipients: []
+
+1716:
+  name: "Blauer DE"
+  recipients: []
+
+1717:
+  name: "Blauer IT"
+  recipients: []
+
+1718:
+  name: "Blauer UK"
+  recipients: []
+
+1719:
+  name: "Blauer ES"
+  recipients: []
+
+1720:
+  name: "Ten C ES"
+  recipients: []
+
+1721:
+  name: "Ten C IT"
+  recipients: []
+
+1722:
+  name: "Ten C DE"
+  recipients: []
+
+1723:
+  name: "Ten C UK"
+  recipients: []
+
+1724:
+  name: "ING Deals BE-NL"
+  recipients: []
+
+1725:
+  name: "ING Deals BE-FR"
+  recipients: []
+
+1727:
+  name: "HUGUP PL"
+  recipients: []
+
+1728:
+  name: "ExpandNow Sandbox"
+  recipients: []
+
+1729:
+  name: "GOATIT ES"
+  recipients: []
+
+1730:
+  name: "Lenbrock PL"
+  recipients: []
+
+1731:
+  name: "50five Installer DE"
+  recipients: []
+
+1732:
+  name: "VortexVR PL"
+  recipients: []
+
+1733:
+  name: "Zanzani (PL)"
+  recipients: []
+
+1734:
+  name: "Yardsale SKI UK"
+  recipients: []
+
+1735:
+  name: "Yardsale SKI DE"
+  recipients: []
+
+1736:
+  name: "Yardsale SKI FR"
+  recipients: []
+
+1739:
+  name: "HorseGloss NL"
+  recipients: []
+
+1740:
+  name: "Codello DE"
+  recipients: []
+
+1741:
+  name: "Cyrulicy PL"
+  recipients: []
+
+1742:
+  name: "Soppo Cosmetics PL"
+  recipients: []
+
+1743:
+  name: "Fragrance One US"
+  recipients: []
+
+1744:
+  name: "Nutrivida PL"
+  recipients: []
+
+1746:
+  name: "Nitro-PC ES"
+  recipients: []
+
+1747:
+  name: "Nitro-PC FR"
+  recipients: []
+
+1748:
+  name: "Nitro-PC PT"
+  recipients: []
+
+1749:
+  name: "Ergotopia FR (FWD CALLS)"
+  recipients: []
+
+1750:
+  name: "Polti ES"
+  recipients: []
+
+1751:
+  name: "Polti UK"
+  recipients: []
+
+1752:
+  name: "Polti PT"
+  recipients: []
+
+1753:
+  name: "Gremari SK"
+  recipients: []
+
+1754:
+  name: "Gremari DE"
+  recipients: []
+
+1755:
+  name: "Gremari CZ"
+  recipients: []
+
+1756:
+  name: "Polti IT"
+  recipients: []
+
+1767:
+  name: "Lindt & Sprüngli Bol.com"
+  recipients: []

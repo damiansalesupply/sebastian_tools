@@ -1,0 +1,10 @@
+.venv/
+.env
+
+*.xlsx
+*.log
+*.json
+*.png
+
+uv.lock
+__pycache__/
