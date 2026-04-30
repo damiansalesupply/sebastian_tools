@@ -142,6 +142,7 @@ def get_email_thread_details(email_id: str|int, shopctrl_instance: ShopCtrlInsta
 ################################################
 
 def get_list_of_tickets_ids(shop_id: int|str, from_date_changed: str | None = None, until_date_changed: str | None = None, shopctrl_instance: ShopCtrlInstance = ShopCtrlInstance.Expert, max_results: int = 100_000) -> list[int]:
+    """untilDateChanged is exclusive on the API: use the day after your last inclusive day."""
     load_dotenv()
     headers = {
         "Authorization": get_auth_header(shopctrl_instance),
@@ -171,6 +172,7 @@ def get_list_of_tickets_ids(shop_id: int|str, from_date_changed: str | None = No
     return tickets_ids
 
 def get_list_of_tickets_ids_and_codes(shop_id: int|str, from_date_changed: str | None = None, until_date_changed: str | None = None, shopctrl_instance: ShopCtrlInstance = ShopCtrlInstance.Expert, max_results: int = 100_000) -> list[int]:
+    """untilDateChanged is exclusive on the API: use the day after your last inclusive day."""
     load_dotenv()
     headers = {
         "Authorization": get_auth_header(shopctrl_instance),

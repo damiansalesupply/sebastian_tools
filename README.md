@@ -13,7 +13,7 @@ You do not need to understand the API to use it: configure shops and emails in Y
   (the time stamp is when the run started, so multiple runs on the same day do not overwrite each other).
 - **Emails** with a zip attachment per recipient (when sending is enabled).
 
-The script asks the API for tickets in a **wider date range** than the reporting period (see `--ticket-window-factor`) so tickets that moved outside the period can still surface; only **comments inside the reporting period** are written to Excel.
+The script asks the API for tickets whose **last change** falls in a wider **inclusive** calendar window than the reporting period (see `--ticket-window-factor`). That window is sent as `fromDateChanged` … `untilDateChanged`, where **`untilDateChanged` is exclusive** on the API side, so the script passes the day *after* the last day you want included. Only **comments inside the reporting period** are written to Excel.
 
 ## Requirements
 

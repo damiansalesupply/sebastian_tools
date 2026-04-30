@@ -12,6 +12,7 @@ import re
 import smtplib
 import sys
 import time
+import unicodedata
 import zipfile
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
@@ -91,9 +92,23 @@ def html2txt(html: str) -> str:
     return clean_invisible_chars(text)
 
 
+def _fold_accents_for_filename(s: str) -> str:
+    """Map letters like ü, é, ö to plain ASCII letters (NFD + drop combining marks)."""
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return s.replace("ß", "ss").replace("ẞ", "SS")
+
+
 def sanitize_filename_part(s: str, max_len: int = 80) -> str:
+    """Fold accented Latin chars; strip whitespace, dots, parentheses; replace invalid path chars."""
+    if s is None:
+        return ""
+    s = _fold_accents_for_filename(str(s))
+    s = re.sub(r"\s+", "", s)
+    s = s.replace(".", "")
+    s = re.sub(r"[()\uff08\uff09]", "", s)  # () and fullwidth （）
     s = re.sub(r'[<>:"/\\|?*]', "_", s)
-    s = re.sub(r"\s+", " ", s).strip()
+    s = s.strip("._")
     return s[:max_len] if len(s) > max_len else s
 
 
@@ -144,6 +159,10 @@ def resolve_period(
 
 
 def ticket_api_date_range(period: PeriodBounds, ticket_window_factor: int) -> tuple[date, date]:
+    """Inclusive calendar bounds for which we want ticket *changes* (fromDateChanged inclusive).
+
+    The API's untilDateChanged is exclusive; callers must pass api_until + 1 day as until_date_changed.
+    """
     if ticket_window_factor < 1:
         raise ValueError("ticket_window_factor must be >= 1")
     period_days = (period.end - period.start).days + 1
@@ -355,7 +374,8 @@ def main() -> None:
 
     api_from, api_until = ticket_api_date_range(period, args.ticket_window_factor)
     from_s = format_api_date(api_from)
-    until_s = format_api_date(api_until)
+    # API untilDateChanged is exclusive — include changes through api_until by sending the next day.
+    until_s = format_api_date(api_until + timedelta(days=1))
     period_tag = f"{format_api_date(period.start)}_{format_api_date(period.end)}"
 
     shops_by_id = load_shops_config(args.shops_yml)
@@ -374,13 +394,14 @@ def main() -> None:
     exported_paths: dict[int, Path] = {}
 
     log.info(
-        "Run started run_calendar_date=%s run_start=%s period=%s..%s ticket_api=%s..%s factor=%s shops=%s",
+        "Run started run_calendar_date=%s run_start=%s period=%s..%s ticket_changes_inclusive=%s..%s untilDateChanged_param=%s factor=%s shops=%s",
         run_calendar_date,
         run_start.isoformat(timespec="seconds"),
         period.start,
         period.end,
         api_from,
         api_until,
+        until_s,
         args.ticket_window_factor,
         len(shop_ids),
     )
