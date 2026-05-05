@@ -778,11 +778,11 @@
 
 1305:
   name: "Pitbull PL"
-  recipients: []
+  recipients: ["d.kuczynski@salesupply.com", "s.adamczak@salesupply.com"]
 
 1308:
   name: "Skullhead PL"
-  recipients: []
+  recipients: ["d.kuczynski@salesupply.com", "s.adamczak@salesupply.com"]
 
 1309:
   name: "Tamaris GR"
@@ -802,7 +802,7 @@
 
 1328:
   name: "Pitbulloutlet PL"
-  recipients: []
+  recipients: ["d.kuczynski@salesupply.com", "s.adamczak@salesupply.com"]
 
 1329:
   name: "Cartag FR"
