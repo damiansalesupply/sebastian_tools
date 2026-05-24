@@ -1,0 +1,33 @@
+{
+  "payload": {
+    "results": [
+      {
+        "offer_id": "G1",
+        "title": "Brawl Stars account 30k trophies | Challenger Colt + Challenger Shelly",
+        "description": "All brawlers maxed, many skins",
+        "seo_term": "brawl-stars-30k",
+        "converted_unit_price": 120.5,
+        "offer_currency": "USD",
+        "username": "seller_one"
+      },
+      {
+        "offer_id": "G2",
+        "title": "Brawl Stars account with rare skins",
+        "description": "Mecha Crow, Dark Lord Spike",
+        "seo_term": "brawl-stars-rare",
+        "converted_unit_price": 80,
+        "offer_currency": "USD",
+        "username": "seller_two"
+      },
+      {
+        "offer_id": "G3",
+        "title": "Account with Challenger Shelly, Brock and the Colt brawler",
+        "description": "",
+        "seo_term": "brawl-stars-mix",
+        "converted_unit_price": 50,
+        "offer_currency": "USD",
+        "username": "seller_three"
+      }
+    ]
+  }
+}
