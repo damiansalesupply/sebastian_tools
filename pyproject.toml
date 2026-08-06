@@ -23,6 +23,11 @@ notebook = [
 openai = [
     "openai>=1.0",
 ]
+# Browser fallback for brawl_stars_scraper.py (JS-rendered / anti-bot marketplaces).
+# After installing, run: playwright install chromium
+browser = [
+    "playwright>=1.40",
+]
 
 [dependency-groups]
 dev = [

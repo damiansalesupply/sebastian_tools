@@ -1,0 +1,48 @@
+# Configuration for brawl_stars_scraper.py
+#
+# Endpoints and selectors below reflect each marketplace's known structure but can drift over
+# time. If a site stops returning results, update its block here (no code changes needed).
+
+# Which sites run by default when --sites is not passed on the command line.
+enabled_sites:
+  - eldorado
+  - g2g
+  - playerauctions
+
+# Regexes (matched against accent-stripped, lowercased, space-normalized listing text) that
+# identify the Challenger Colt skin. Both words must be adjacent in either order.
+filter_patterns:
+  - "challenger colt"
+  - "colt challenger"
+
+# Shared fetch behaviour.
+fetch:
+  timeout: 20          # per-request timeout (seconds)
+  min_delay: 2.0       # minimum seconds between requests to the same host (politeness / rate limit)
+  browser_wait_ms: 3500  # how long the browser fallback waits for JS to render
+
+# Per-site overrides. Anything omitted falls back to the adapter defaults.
+sites:
+  g2g:
+    seo_term: brawl-stars-account
+    page_size: 48
+    currency: USD
+    country: US
+    sort: most_relevant
+    keep_raw: false
+
+  eldorado:
+    # Leave api_url empty to parse the rendered category page's __NEXT_DATA__ instead.
+    api_url: ""
+    page_url: "https://www.eldorado.gg/brawl-stars-accounts/c/Account?searchTerm={query}&pageIndex={page}"
+    currency: USD
+    keep_raw: false
+
+  playerauctions:
+    page_url: "https://www.playerauctions.com/brawl-stars-account/?page={page}"
+    selectors:
+      card: "div.offer-card, li.offer, div.product-item"
+      title: "a.offer-title, .product-title, h3"
+      price: ".offer-price, .price"
+      link: "a.offer-title, a.product-link, a"
+      seller: ".seller-name, .offer-seller"

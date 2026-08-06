@@ -96,3 +96,59 @@ Run from the project directory.
 Each shop is keyed by numeric ID. Shops with an empty `recipients` list are **not** exported (nothing to send). Add one or more email strings under `recipients` for shops that should appear in the run.
 
 To look up **shop IDs** (same numbers as the keys in `shops.yml`), you can call the CMS API, for example: [https://api.salesupply.com/v1/Shops/](https://api.salesupply.com/v1/Shops/) (GET; use the same `Authorization` value as `SHOPCTRL_BASIC_AUTH_HEADER` in `.env`). The JSON payload includes each shop’s `Id` and name fields.
+
+---
+
+# Brawl Stars account scraper
+
+`brawl_stars_scraper.py` searches game-account marketplaces for **Brawl Stars** listings and filters the ones advertising the **Challenger Colt** skin, to study the second-hand account market. It scrapes **Eldorado.gg**, **G2G.com** and **PlayerAuctions** and writes the results as **JSON** under `data/<run-date>/`.
+
+## How it works
+
+- **Per-site adapters** (`brawl_scraper/sites/`) know how to query each marketplace and normalize its results into a common `Listing` (title, price, currency, url, seller, …). G2G is read from its JSON search API; Eldorado from the page's embedded `__NEXT_DATA__` (or a configurable API); PlayerAuctions from HTML offer cards.
+- **Hybrid fetcher** (`brawl_scraper/fetcher.py`): tries plain `requests` first and falls back to a real headless browser (**Playwright**) when a site answers with an anti-bot wall (403/429/503) or needs JavaScript. Playwright is optional and imported lazily — without it the tool still runs the requests-only path. Requests to the same host are rate-limited (`fetch.min_delay`).
+- **Filter** (`brawl_scraper/matcher.py`): a listing matches only when the words *challenger* and *colt* appear **adjacent** (either order), after accents/punctuation are normalized — so `Challenger Colt`, `challenger-colt` and `Colt (Challenger)` all match, while "Challenger Shelly … Colt brawler" does **not**.
+
+## Setup
+
+```bash
+uv venv --python 3.12
+uv pip install -e .            # core deps
+uv pip install -e ".[browser]" # optional: enables the Playwright fallback
+.venv/bin/playwright install chromium
+```
+
+> Note: many marketplaces block datacenter IPs (HTTP 403). Run from an environment/network that can reach the sites, and keep Playwright installed so blocked requests can retry through a real browser.
+
+## Usage
+
+```bash
+# All enabled sites (from brawl_config.yml), 3 pages each, results to data/<date>/
+.venv/bin/python brawl_stars_scraper.py
+
+# Specific sites, more pages, also keep every scanned listing (not just matches)
+.venv/bin/python brawl_stars_scraper.py --sites g2g eldorado --max-pages 5 --save-all
+
+# Requests only (no browser fallback), custom output path
+.venv/bin/python brawl_stars_scraper.py --no-browser --output out.json
+```
+
+| Option | Description |
+|--------|-------------|
+| `--sites {eldorado,g2g,playerauctions} …` | Sites to scrape (default: `enabled_sites` from config). |
+| `--query` | Search term (default: `brawl stars account`). |
+| `--max-pages N` | Max result pages per site (default: 3). |
+| `--config PATH` | Config YAML (default: `brawl_config.yml`). |
+| `--output PATH` | Output JSON (default: `data/<date>/brawl_colt_<ts>.json`). |
+| `--save-all` | Also include every scanned listing, not just Challenger Colt matches. |
+| `--no-browser` | Disable the Playwright fallback (requests only). |
+| `-q`, `--quiet` | Only log warnings and errors. |
+
+## Configuration (`brawl_config.yml`)
+
+Endpoints, CSS selectors, rate limits and the filter regexes live in `brawl_config.yml`, so a site that changes its markup/API can be fixed there **without code changes**. See the comments in that file.
+
+## Output
+
+A single JSON file: `query`, `filter`, `generated_at`, `stats` (per-site scanned/matched counts) and `matched_listings`. With `--save-all` it also includes `all_listings`. A `.log` file is written alongside it.
+

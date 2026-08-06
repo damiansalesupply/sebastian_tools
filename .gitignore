@@ -6,5 +6,8 @@
 *.json
 *.png
 
+# Test fixtures are checked in even though they are .json.
+!tests/fixtures/*.json
+
 uv.lock
 __pycache__/
