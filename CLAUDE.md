@@ -168,6 +168,24 @@ pytest
 
 ---
 
+## Healthcheck monitor
+
+- URL: `https://hc-ping.com/6fbcff81-d29a-445a-81ef-1ee6b03d001b`
+- Pingowany przez `run_daily.sh` na VPS po każdym udanym runie (dodane 2026-08-20).
+- Jeśli monitor pokazuje "Down" → sprawdź `/tmp/export_daily.log` na VPS.
+
+## Jak ręcznie wysłać raport (przy awarii crona)
+
+```bash
+# 1. Eksport za konkretny dzień (np. wczoraj = 2026-08-19)
+ssh -i ~/.ssh/id_ed25519_vps claude-agent@62.238.2.26 \
+  "sudo -u sebastian bash -c 'cd /home/sebastian/comments_export && .venv/bin/python export_comments.py --only-shops 1305 1308 1328 --period time-range --from-date 2026-08-19 --to-date 2026-08-19 --no-sending'"
+
+# 2. Wysyłka do odbiorców
+ssh -i ~/.ssh/id_ed25519_vps claude-agent@62.238.2.26 \
+  "sudo -u sebastian bash -c 'cd /home/sebastian/comments_export && .venv/bin/python send_combined.py d.kuczynski@salesupply.com && .venv/bin/python send_combined.py s.adamczak@salesupply.com'"
+```
+
 ## Kończenie sesji — checklist
 
 Gdy użytkownik napisze "kończymy sesję":

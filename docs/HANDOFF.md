@@ -8,9 +8,10 @@ Aktualizuj na końcu każdej sesji. Sekcja "Aktualny stan" zawsze odzwierciedla 
 
 - **Branch**: `main`
 - **Remote**: https://github.com/damiansalesupply/sebastian_tools.git (publiczne)
-- **Ostatni commit**: 6aec321 Add recipients for Pitbull PL, Skullhead PL, Pitbulloutlet PL
-- **Ostatnia aktualizacja tego pliku**: 2026-07-30
+- **Ostatni commit**: 421d003 docs: add END_OF_SESSION.md procedure (lokalnie; VPS ma run_daily.sh z pingiem — nie commitowane)
+- **Ostatnia aktualizacja tego pliku**: 2026-08-20
 - **Środowisko produkcyjne**: VPS `62.238.2.26` → `/home/sebastian/comments_export/` (user: `sebastian`)
+- **Healthcheck monitor**: https://hc-ping.com/6fbcff81-d29a-445a-81ef-1ee6b03d001b (ping wysyłany przez `run_daily.sh` po udanym runie)
 
 ---
 
@@ -38,6 +39,7 @@ Aktualizuj na końcu każdej sesji. Sekcja "Aktualny stan" zawsze odzwierciedla 
 
 ## Ryzyka / blokery / decyzje do podjęcia
 
+- **API ShopCtrl 500** — 2026-08-13 i prawdopodobnie 2026-08-20 API padało o 01:00 UTC. Cron nie ponawia próby — wymagana ręczna interwencja przy kolejnej awarii (patrz sekcja "Jak ręcznie wysłać raport" niżej).
 - **API ShopCtrl** może zmienić format odpowiedzi — brak testów na to, ryzyko cichej regresji.
 - **Limity SMTP CyberFolks** — przy wzroście volume mailingu sprawdzić rate-limity.
 - **Rotacja hasła SMTP** — konto `support@salesupplyaiservices.com` padło 2026-07-27 (535 auth). Obecne konto `ai_agent@salesupplyaiservices.website` działa, ale jak następnym razem padnie — patrz `CLAUDE.md` sekcja Sekrety.
@@ -60,6 +62,32 @@ Aktualizuj na końcu każdej sesji. Sekcja "Aktualny stan" zawsze odzwierciedla 
 ## Historia sesji
 
 > Każdy wpis = podsumowanie jednej sesji. Nowsze na górze.
+
+### Sesja 2026-08-20 — Healthcheck monitor + ręczne wysyłki po awariach API
+
+**Cel**: przywrócić raport za 2026-08-13 (API 500 w nocy) + podłączyć healthcheck monitor.
+
+**Co zrobiono**:
+- Zdiagnozowano awarię ShopCtrl API z 2026-08-13 (HTTP 500 dla sklepów 1305/1308/1328 o 01:00 UTC) — ręcznie odparto eksport i wysłano do d.kuczynski + s.adamczak.
+- Zidentyfikowano healthcheck monitor (hc-ping.com) — `run_daily.sh` nie pingował go wcale, stąd status "Down".
+- Dodano `curl -fsS --retry 3 https://hc-ping.com/6fbcff81-d29a-445a-81ef-1ee6b03d001b` na końcu `run_daily.sh` na VPS.
+- Przetestowano ping ręcznie z VPS → `OK` ✅.
+- Wysłano raport za 2026-08-19 (wczoraj) do d.kuczynski i s.adamczak ✅.
+
+**Pliki zmienione**:
+
+| Plik | Gdzie | Zmiana |
+|---|---|---|
+| `run_daily.sh` | VPS `/home/sebastian/comments_export/` | Dodano curl ping healthchecka na końcu |
+| `docs/HANDOFF.md` | lokalnie | ta sesja |
+
+**Testy / weryfikacja**:
+- `curl` ping z VPS → `OK` ✅
+- Kod skryptu nie zmieniony — brak potrzeby ruff/pytest.
+
+**Uwaga**: `run_daily.sh` na VPS **różni się od wersji w git** — git nie ma tej zmiany. Rozważyć czy commitować `run_daily.sh` do repo (aktualnie go tam nie ma).
+
+---
 
 ### Sesja 2026-07-30 — Naprawa SMTP (konto nadawcy padło)
 
